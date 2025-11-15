@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SB Product Catalogue</title> 
+<link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+<div class="splash">
+  <img src="Shop Logo.png" class="logo-splash" alt="Shop Logo" />
+</div>
+
+<header class="header hidden">
+  <img src="Shop Logo.png" class="logo" alt="Shop Logo" />
+  <h1>SB Product Catalogue</h1>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterProducts()">
+  </div>
+</header>
+
+<main class="main hidden" id="productContainer"></main>
+
+<div class="pagination-controls hidden">
+    <button id="prevPage">Previous</button>
+    <span id="pageInfo">Page 1 of 1</span>
+    <button id="nextPage">Next</button>
+</div>
+
+<footer class="footer hidden">
+    <p>&copy; 2024 SB Product Catalogue. All rights reserved.</p>
+</footer>
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="modalDetails">
+      </div>
+  </div>
+</div>
+
+<script src="script.js"></script> </body>
+</html>
